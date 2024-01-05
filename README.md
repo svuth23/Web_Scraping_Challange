@@ -143,5 +143,5 @@ Atmospheric pressure is, on average, lowest in the sixth month and highest in th
 The distance from peak to peak is roughly 1425-750, or 675 days. A year on Mars appears to be about 675 days from the plot. Internet search confirms that a Mars year is equivalent to 687 earth days.
 
 # Step 6: Save the Data
-Export the DataFrame to a CSV file.
- Mars details
+Export the DataFrame to  CSV file 
+ Mars details: https://github.com/svuth23/Web_Scraping_Challange/blob/main/Mars%20details
