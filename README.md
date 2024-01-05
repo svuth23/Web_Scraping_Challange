@@ -1,6 +1,6 @@
 # Web_Scraping_Challange.
 
-## MARS News And  Weather Data.
+# Mars News And  Weather Data.
 
 Scraping and analyzing data on Mars news and on the weather data.
 This Analysis project is divided in to two parts. 
