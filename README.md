@@ -1,38 +1,45 @@
-# Web_Scraping_Challange
-## MARS News And  Weather Data
+# Web_Scraping_Challange.
 
-### This Analysis project is divided in to two parts. 
+## MARS News And  Weather Data.
+This Analysis project is divided in to two parts. 
 Deliverable 1: Scrape titles and preview text from Mars news articles.
 Deliverable 2: Scrape and analyse Mars weather data, which exists in a table.
 
-### external links/sites/data used are:
-for part 1 program : https://static.bc-edx.com/data/web/mars_news/index.html
+# Relevant libraries.
+from splinter import Browser,
+from bs4 import BeautifulSoup,
+import matplotlib,
+import pandas .
+
+
+# External links/sites/data used are:
+For part 1 program : https://static.bc-edx.com/data/web/mars_news/index.html
+
 for part 2  program : https://static.bc-edx.com/data/web/mars_facts/temperature.html
 
-# Relevant libraries
-from splinter import Browser
-from bs4 import BeautifulSoup
-import matplotlib
-import pandas 
+# Part 1: Scrape Titles and Preview Text from Mars News.
 
-# Part 1: Scrape Titles and Preview Text from Mars News
 1. visit the Mars news siteLinks to an external site.. Inspect the page to identify which elements to scrape.
-2.Create a Beautiful Soup object and use it to extract text elements from the website.
-Extract the titles and preview text of the news articles that you scraped. Store the scraping results in Python data structures as follows:
-Store each title-and-preview pair in a Python dictionary and, give each dictionary two keys: title and preview.
-The result looks like :
 
-{'title': "NASA's MAVEN Observes Martian Light Show Caused by Major Solar Storm", 
- 'preview': "For the first time in its eight years orbiting Mars, NASA’s MAVEN mission witnessed two different types of ultraviolet aurorae simultaneously, the result of solar storms that began on Aug. 27."}
+2.Create a Beautiful Soup object and use it to extract text elements from the website.
+ Extract the titles and preview text of the news articles that you scraped. Store the scraping results in Python data structures as follows:
+ Store each title-and-preview pair in a Python dictionary and, give each dictionary two keys: title and preview.
+ The result looks like :
+
+ {'title': "NASA's MAVEN Observes Martian Light Show Caused by Major Solar Storm", 
+ 'preview': "For the first time in its eight years orbiting Mars, NASA’s MAVEN mission witnessed two different types of ultraviolet aurorae simultaneously, 
+  the result of solar storms that began on Aug. 27."}
 
 3.Store all the dictionaries in a Python list.
+
 4.Print the list in your notebook.
 
-# part2:
+# part2: Scrape and analyse Mars weather data, which exists in a table.
+
 #### steps to get results
-### Step 1: Visit the Website
- Inspect the page to identify which elements to scrape.
-# https://static.bc-edx.com/data/web/mars_facts/temperature.html
+### Step 1: 
+Inspect the page to identify which elements to scrape.
+### https://static.bc-edx.com/data/web/mars_facts/temperature.html
 
 ### Step 2: Scrape the Table
 Create a Beautiful Soup object and use it to scrape the data in the HTML table.
@@ -98,6 +105,7 @@ Name: min_temp, dtype: float64
 
 ### Identify the coldest and hottest months in Curiosity's location
 Plot the results as a bar chart.
+
 ![image](https://github.com/svuth23/Web_Scraping_Challange/assets/136966712/86c6e6a3-ce2d-469b-95a3-88724017499e)
 
 
@@ -125,6 +133,7 @@ Name: pressure, dtype: float64
 To answer this question:
 Consider how many days elapse on Earth in the time that Mars circles the Sun once.
 Visually estimate the result by plotting the daily minimum temperature.
+
 ![image](https://github.com/svuth23/Web_Scraping_Challange/assets/136966712/d0d6c34f-266a-4030-9f1b-f4f6c0a84e20)
 
 On average, the third month has the coldest minimum temperature on Mars, and the eighth month is the warmest. But it is always very cold there in human terms!
