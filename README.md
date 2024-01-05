@@ -1,6 +1,8 @@
 # Web_Scraping_Challange.
 
 ## MARS News And  Weather Data.
+
+Scraping and analyzing data on Mars news and on the weather data.
 This Analysis project is divided in to two parts. 
 Deliverable 1: Scrape titles and preview text from Mars news articles.
 Deliverable 2: Scrape and analyse Mars weather data, which exists in a table.
@@ -52,9 +54,13 @@ Assemble the scraped data into a Pandas DataFrame. The columns should have the s
 
 id: the identification number of a single transmission from the Curiosity rover
 terrestrial_date: the date on Earth
+
 sol: the number of elapsed sols (Martian days) since Curiosity landed on Mars
+
 ls: the solar longitude
+
 month: the Martian month
+
 min_temp: the minimum temperature, in Celsius, of a single Martian day (sol)
 pressure: The atmospheric pressure at Curiosity's location
 
@@ -66,40 +72,34 @@ Confirm DataFrame was created successfully
 Examine the data types that are currently associated with each column. If necessary, cast (or convert) the data to the appropriate datetime, int, or float data types.
 ### Step 5: Analyse the Data
 Analyse your dataset by using Pandas functions to answer the following questions:
-### 1. How many months are there on Mars?
-month
-1     174
-2     178
-3     192
-4     194
-5     149
-6     147
-7     142
-8     141
-9     134
-10    112
-11    138
-12    166
-Name: month, dtype: int64
+### 1. How many months are there on Mars? 
+(months 12)
+
 ### 2. How many Martian days' worth of data are there?
 1867
-### 3. What is the average low temperature by month?
+### 3.What are the coldest and warmest months on Mars?
+(Coldest: Month 3, Warmest: Month 8)
+
+first find What is the average low temperature by month? 
 Find the average the minimum daily temperature for all of the months.
 Plot the results as a bar chart.
+
 month
-1    -77.160920
-2    -79.932584
-3    -83.307292
-4    -82.747423
-5    -79.308725
-6    -75.299320
-7    -72.281690
-8    -68.382979
-9    -69.171642
-10   -71.982143
-11   -71.985507
-12   -74.451807
+1    -77.160920,
+2    -79.932584,
+3    -83.307292,
+4    -82.747423,
+5    -79.308725,
+6    -75.299320,
+7    -72.281690,
+8    -68.382979,
+9    -69.171642,
+10   -71.982143,
+11   -71.985507,
+12   -74.451807.
+
 Name: min_temp, dtype: float64
+
 ### Plot the average temperature by month
 ![image](https://github.com/svuth23/Web_Scraping_Challange/assets/136966712/c32cd60f-9e25-4768-b48a-b5ce9239b5b0)
 
@@ -110,6 +110,8 @@ Plot the results as a bar chart.
 
 
 #### 4. Average pressure by Martian month
+(Hightest: Month 9,Lowest: Month 6)
+
 Which months have the lowest and the highest atmospheric pressure on Mars? To answer this question:
 Find the average the daily atmospheric pressure of all the months.
 month
@@ -129,7 +131,7 @@ Name: pressure, dtype: float64
 ### Plot the average pressure by month
 ![image](https://github.com/svuth23/Web_Scraping_Challange/assets/136966712/62e60f02-5650-4e10-948c-6baa8371983e)
 
-### 5. How many terrestrial (earth) days are there in a Martian year?
+### 5. How many terrestrial (earth) days are there in a Martian year?(675 days)
 To answer this question:
 Consider how many days elapse on Earth in the time that Mars circles the Sun once.
 Visually estimate the result by plotting the daily minimum temperature.
@@ -142,4 +144,4 @@ The distance from peak to peak is roughly 1425-750, or 675 days. A year on Mars 
 
 # Step 6: Save the Data
 Export the DataFrame to a CSV file.
-Mars details
+ Mars details
